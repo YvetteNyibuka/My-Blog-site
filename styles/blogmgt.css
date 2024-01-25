@@ -40,7 +40,7 @@ header {
 .logo {
   font-size: 27px;
   font-weight: 600;
-  color: rgb(47, 141, 70);
+  color: pink;
 }
 
 .icn {
@@ -67,7 +67,7 @@ header {
 }
 
 .searchbar input {
-  width: 250px;
+  width: 10vw;
   height: 42px;
   border-radius: 50px 0 0 50px;
   background-color: var(--background-color3);
@@ -83,7 +83,7 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 0px 50px 50px 0px;
-  background-color: var(--secondary-color);
+  background-color: pink;
   cursor: pointer;
 }
 
@@ -124,8 +124,9 @@ header {
 
 .main {
   height: calc(100vh - 70px);
-  width: 100%;
+  width: 82%;
   overflow-y: scroll;
+  background-color: white;
   overflow-x: hidden;
   padding: 40px 30px 30px 30px;
 }
@@ -149,12 +150,13 @@ header {
 }
 .nav {
   min-height: 91vh;
-  width: 250px;
-  background-color: var(--background-color2);
+  width: 100%;
+  background-color: white;
   position: absolute;
   top: 0px;
   left: 00;
-  box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+  box-shadow: 1px 1px 10px lightgray;
+  border: 1px solid gray;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -163,11 +165,13 @@ header {
 }
 .navcontainer {
   height: calc(100vh - 70px);
-  width: 250px;
+  width: 18%;
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
   transition: all 0.5s ease-in-out;
+  /* border-right: 1px solid gray; */
+  box-shadow: 3px 3px 10px gray;
 }
 .navcontainer::-webkit-scrollbar {
   display: none;
@@ -185,14 +189,18 @@ header {
   transition: all 0.1s ease-in-out;
 }
 .nav-option:hover {
-  border-left: 5px solid #a2a2a2;
-  background-color: #dadada;
+  border-left: 5px solid white;
+  background-color: pink;
   cursor: pointer;
 }
-.nav-img {
-  height: 30px;
+.icon {
+  color: black;
+  font-size: 1.5rem;
 }
-
+.icon1 {
+  color: black;
+  font-size: 2.5rem;
+}
 .nav-upper-options {
   display: flex;
   flex-direction: column;
@@ -201,24 +209,23 @@ header {
 }
 
 .option1 {
-  border-left: 5px solid #010058af;
-  background-color: var(--Border-color);
-  color: white;
+  border-left: 5px solid lightgray;
+  background-color: white;
   cursor: pointer;
 }
 .option1:hover {
-  border-left: 5px solid #010058af;
-  background-color: var(--Border-color);
+  border-left: 5px solid lightgray;
+  background-color: pink;
 }
 .box {
   height: 130px;
-  width: 230px;
+  width: 200px;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.751);
+  box-shadow: 3px 3px 10px gray;
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
@@ -227,16 +234,16 @@ header {
 }
 
 .box:nth-child(1) {
-  background-color: var(--one-use-color);
+  border: 1px solid lightgray;
 }
 .box:nth-child(2) {
-  background-color: var(--two-use-color);
+  border: 1px solid lightgray;
 }
 .box:nth-child(3) {
-  background-color: var(--one-use-color);
+  border: 1px solid lightgray;
 }
 .box:nth-child(4) {
-  background-color: var(--two-use-color);
+  border: 1px solid lightgray;
 }
 
 .box img {
@@ -249,11 +256,13 @@ header {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 1px;
+  color: black;
 }
 
 .topic-heading {
   font-size: 30px;
   letter-spacing: 3px;
+  color: black;
 }
 
 .report-container {
@@ -272,20 +281,19 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px 10px 20px;
-  border-bottom: 2px solid rgba(0, 20, 151, 0.59);
+  border-bottom: 2px solid black;
 }
 
 .recent-Articles {
   font-size: 30px;
   font-weight: 600;
-  color: #5500cb;
 }
 
 .view {
   height: 35px;
   width: 90px;
   border-radius: 8px;
-  background-color: #5500cb;
+  background-color: pink;
   color: white;
   font-size: 15px;
   border: none;
