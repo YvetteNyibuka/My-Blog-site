@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.menu-icon {
+  display: none;
+}
+.nav-bar {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: pink !important;
+  width: 100%;
+  position: fixed;
+  height: 12vh;
+}
+.logo {
+  width: 30%;
+  padding-left: 5rem;
+}
+.logo p {
+  text-align: start !important;
+}
+.navlinks {
+  width: 60%;
+  padding-right: 5rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 11vh;
+    left: 16rem;
+    background-color: pink;
+    width: 15%;
+    text-align: start;
+    z-index: 1;
+  }
+
+  .logo {
+    width: 30%;
+    padding-left: 2rem;
+  }
+
+  .navlinks.active {
+    display: flex;
+  }
+
+  .navlinks ul {
+    flex-direction: column;
+  }
+
+  .nav-bar .menu-icon {
+    cursor: pointer;
+    display: block;
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: black;
+  }
+
+  ul li{
+    margin-top: 1rem;
+  }
+}
