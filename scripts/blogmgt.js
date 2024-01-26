@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let menuicn = document.querySelector(".menuicn");
+let menuicn = document.querySelector(".icn-menuicn");
   let nav = document.querySelector(".navcontainer");
   let dashboardLink = document.getElementById("dashboard-link");
   let usersLink = document.getElementById("users-link");
